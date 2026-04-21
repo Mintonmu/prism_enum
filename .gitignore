@@ -74,3 +74,7 @@ Testing/
 *.sublime-project
 *.sublime-workspace
 *.code-workspace
+
+# zig cache
+.zig-cache/
+zig-out/

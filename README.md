@@ -1,6 +1,6 @@
 # prism_enum
 
-A lightweight, header-only C++20 library for compile-time and runtime enum reflection. It allows you to convert enum values to strings and parse strings back into enum values without the need for macros, boilerplate code, or external code generation tools.
+A lightweight, header-only C++17 library for compile-time and runtime enum reflection. It allows you to convert enum values to strings and parse strings back into enum values without the need for macros, boilerplate code, or external code generation tools.
 
 ## Features
 

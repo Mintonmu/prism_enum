@@ -35,3 +35,11 @@
 *.exe   binary
 *.out   binary
 *.app   binary
+
+# zig file 
+# Source files
+*.zig      text diff=zig
+
+# Build files
+build.zig  text diff=zig
+build.zig.zon text

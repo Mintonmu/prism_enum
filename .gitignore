@@ -43,7 +43,7 @@
 build/
 Build/
 build-*/
-
+builddir/
 # CMake generated files
 CMakeFiles/
 CMakeCache.txt
@@ -78,3 +78,4 @@ Testing/
 # zig cache
 .zig-cache/
 zig-out/
+zig_build/

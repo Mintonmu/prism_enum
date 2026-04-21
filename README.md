@@ -9,10 +9,6 @@ A lightweight, header-only C++17 library for compile-time and runtime enum refle
 *   **Compile-Time & Runtime**: Leverages compiler intrinisics (`__PRETTY_FUNCTION__`, `__FUNCSIG__`) and `constexpr` evaluation.
 *   **Build System Agnostic**: Easily integrates via Meson, Zig, CMake, or by simply dropping the headers into your project.
 
-## Requirements
-
-*   A C++20 compliant compiler (GCC 10+, Clang 11+, or MSVC 2019+).
-
 ## Usage
 
 ```cpp

@@ -79,3 +79,7 @@ Testing/
 .zig-cache/
 zig-out/
 zig_build/
+
+# Meson
+subprojects/*
+!subprojects/*.wrap

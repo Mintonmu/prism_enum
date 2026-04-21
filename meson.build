@@ -16,3 +16,15 @@ install_subdir('include', install_dir : get_option('includedir'), strip_director
 prism_enum_dep = declare_dependency(
   include_directories : inc,
 )
+
+if not meson.is_subproject()
+  catch2_dep = dependency('catch2-with-main', fallback: ['catch2', 'catch2_with_main_dep'])
+
+  test_exe = executable(
+    'prism_enum_test',
+    'test/test_main.cpp',
+    dependencies : [prism_enum_dep, catch2_dep]
+  )
+
+  test('prism_enum_basic_test', test_exe)
+endif

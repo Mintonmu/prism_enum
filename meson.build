@@ -11,18 +11,8 @@ dependencies = [
 
 inc = include_directories('include')
 
-prism_enum_lib = static_library(
-  'prism_enum',
-  [
-    'src/prism_enum.cpp',
-    'src/prism_impl.cpp',
-  ],
-  include_directories : inc,
-  install : true,
-  dependencies : dependencies,
-)
+install_subdir('include', install_dir : get_option('includedir'), strip_directory : true)
 
 prism_enum_dep = declare_dependency(
-  link_with : prism_enum_lib,
   include_directories : inc,
 )

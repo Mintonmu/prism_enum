@@ -23,6 +23,7 @@ if not meson.is_subproject()
   test_exe = executable(
     'prism_enum_test',
     'test/test_main.cpp',
+    'test/test_edge_cases.cpp',
     dependencies : [prism_enum_dep, catch2_dep]
   )
 
